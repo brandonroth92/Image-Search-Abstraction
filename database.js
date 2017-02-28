@@ -9,6 +9,7 @@ exports.connect = function() {
   mongoose.connect(MONGOLAB_URI);
 }
 
+//once database is available, run app code
 exports.db = function(callback) {
   db.on('error', console.error.bind(console, 'connection error: '));
   db.once('open', function() {

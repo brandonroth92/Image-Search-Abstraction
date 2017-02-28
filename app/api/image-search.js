@@ -12,6 +12,7 @@ module.exports = function(app) {
   
 };
 
+//find and return up to 10 most recent entries in db, only return "term" and "when"
 function getHistory(req, res) {
   History.
     find({}, { _id: 0, term: 1, when: 1 }).
@@ -23,6 +24,7 @@ function getHistory(req, res) {
   });
 };
 
+//set up google search and history object
 function handleGet(req, res) {
   var query = req.params.query;
   var search = new Search({ 
@@ -36,6 +38,7 @@ function handleGet(req, res) {
 
   save(history);
   
+  //build search using query
   search.build({
     q: query,
     searchType: 'image',
@@ -47,6 +50,7 @@ function handleGet(req, res) {
   );
 };
 
+//turn search response into meaningful list of image data
 function makeList(img) {
   return {
     "url": img.link,
@@ -56,6 +60,7 @@ function makeList(img) {
   };
 };
 
+//save history object into database
 function save(obj) {
   var history = new History(obj);
   history.save(function(err, history) {
