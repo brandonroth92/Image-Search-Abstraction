@@ -1,0 +1,21 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "Free Code Camp Back End Web Development API Project",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "google-search": "0.0.5",
+    "jade": "^1.11.0",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.4",
+    "serve-favicon": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Brandon Roth",
+  "license": "ISC"
+}

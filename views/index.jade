@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div(class="container")
+      
+    div(class="page-header")
+      h1 API Project: URL Shortener Microservice
+      p By Brandon Roth | #[a(href="https://github.com/brandonroth92/Image-Search-Abstraction") Project GitHub]
+
+    div
+      h2 What is this?
+      p This is an API project for freeCodeCamp's Back End Development Certification. It accepts a GET request and returns image data for relevant images in the form of an array of JSON objects. It can also return a JSON object displaying the most recent queries. See examples below for usage.
+      br
+
+      h4 Example query usage:
+      code https://brandonr-image-search.herokuapp.com/dogs
+      
+      h4 Example 'recent searches' usage
+      code https://brandonr-image-search.herokuapp.com/latest
+
+      h4 Example query output:
+      code. 
+        [{
+        "url":"http://www.example.com",
+        "snippet":"Example Title",
+        "thumbnail":"http://www.examplethumbnail.com",
+        "context":"https://www.examplecontext.com"
+        }]
+
+      h4 Example 'recent searches' output:
+      code. 
+        [{
+        "term":"example",
+        "when":"2/27/2017, 4:46:16 PM"
+        }]
+
+        
+    
+    
