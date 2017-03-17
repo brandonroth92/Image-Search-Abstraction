@@ -3,7 +3,7 @@ By Brandon Roth
 
 This is an API project for freeCodeCamp's Back End Development Certification. It accepts a GET request and returns image data for relevant images in the form of an array of JSON objects. It can also return a JSON object displaying the most recent queries. See examples below for usage.
 
-You can test it at [https://brandonr-image-search.herokuapp.com/] (https://brandonr-shorturl.herokuapp.com/)
+You can test it at [https://brandonr-image-search.herokuapp.com/](https://brandonr-image-search.herokuapp.com/)
 
 ### Example query usage:
 
